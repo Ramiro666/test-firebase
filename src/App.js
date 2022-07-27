@@ -35,7 +35,7 @@ function App() {
       </div>
       
       <div className='table-responsive'>
-        <table className='table table-hover table-dark table-fixed' id='tablafirebase'>
+        <table className='table table-hover table-fixed' id='tablafirebase'>
           <thead>
             <tr style={{width:600}}>
               <th style={{width:200}} scope='col'>NOMBRE</th>
@@ -46,7 +46,7 @@ function App() {
             </tr>
           </thead>
             <tbody>
-              <tr style={{width:680}}>
+              {/* <tr style={{width:680}}>
                 <td style={{width:200}}>ramiro</td>
                 <td style={{width:210}}>ventas</td>
                 <td style={{width:240}}>56465416511313</td>
@@ -192,20 +192,20 @@ function App() {
                 <td style={{width:240}}>56465416511313</td>
                 <td style={{width:240}}>7455884</td>
                 <td style={{width:240}}>22531dasda3</td>
-              </tr>
+              </tr> */}
 
               {
                 lista.map(list => {
                 return (
                   <tr 
                   key={list.id}
-                  style={{width:600}}
+                  style={{width:680}}
                   >
                     <td style={{width:200}}>{list.nombre}</td>
                     <td style={{width:210}}>{list.razon_social}</td>
-                    <td style={{width:200}}>{list.nit}</td>
-                    <td style={{width:190}}>{list.telefono}</td>
-                    <td style={{width:200}}>{list.codigo}</td>
+                    <td style={{width:240}}>{list.nit}</td>
+                    <td style={{width:240}}>{list.telefono}</td>
+                    <td style={{width:240}}>{list.codigo}</td>
                   </tr>
                 
                 );
